@@ -6,4 +6,4 @@ const pool = mysql.createPool({
     database: 'task_manager_db'
 })
 
-module.exports(pool)
+module.exports = pool;
