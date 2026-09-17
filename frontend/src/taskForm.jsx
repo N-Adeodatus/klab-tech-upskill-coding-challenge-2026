@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import './TaskForm.css';
 
 function TaskForm({ initialValues, onSubmit, onCancel }) {
   const [title, setTitle] = useState('');
@@ -20,7 +21,7 @@ function TaskForm({ initialValues, onSubmit, onCancel }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="task-form" onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Title"
@@ -34,12 +35,14 @@ function TaskForm({ initialValues, onSubmit, onCancel }) {
         onChange={e => setDescription(e.target.value)}
       />
       <select value={priority} onChange={e => setPriority(e.target.value)}>
-        <option value="low">Low</option>
-        <option value="medium">Medium</option>
-        <option value="high">High</option>
+        <option value="low">Low priority</option>
+        <option value="medium">Medium priority</option>
+        <option value="high">High priority</option>
       </select>
-      <button type="submit">{initialValues ? 'Update Task' : 'Add Task'}</button>
-      {initialValues && <button type="button" onClick={onCancel}>Cancel</button>}
+      <div className="task-form-actions">
+        <button type="submit">{initialValues ? 'Update task' : 'Add task'}</button>
+        {initialValues && <button type="button" onClick={onCancel}>Cancel</button>}
+      </div>
     </form>
   );
 }
