@@ -26,26 +26,38 @@ A full-stack task management application built as a coding challenge. This proje
 ## Project Structure
 
 ```text
-.
+klab-tech-upskill-coding-challenge-2026/
 ├── README.md
 ├── backend
 │   ├── db.js
-│   ├── package.json
 │   ├── package-lock.json
+│   ├── package.json
 │   ├── server.js
 │   └── taskModel.js
 └── frontend
-    ├── package.json
-    ├── package-lock.json
+    ├── README.md
     ├── index.html
-    ├── vite.config.js
+    ├── package-lock.json
+    ├── package.json
     ├── public
-    └── src
-        ├── App.jsx
-        ├── TaskForm.jsx
-        ├── TaskItem.jsx
-        ├── TaskList.jsx
-        └── ...
+    │   ├── favicon.svg
+    │   └── icons.svg
+    ├── src
+    │   ├── App.css
+    │   ├── App.jsx
+    │   ├── TaskForm.css
+    │   ├── TaskForm.jsx
+    │   ├── TaskItem.css
+    │   ├── TaskItem.jsx
+    │   ├── TaskList.css
+    │   ├── TaskList.jsx
+    │   ├── assets
+    │   │   ├── hero.png
+    │   │   ├── react.svg
+    │   │   └── vite.svg
+    │   ├── index.css
+    │   └── main.jsx
+    └── vite.config.js
 ```
 
 ## Features
