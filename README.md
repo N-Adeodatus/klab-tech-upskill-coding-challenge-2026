@@ -29,12 +29,14 @@ A full-stack task management application built as a coding challenge. This proje
 klab-tech-upskill-coding-challenge-2026/
 ├── README.md
 ├── backend
+│   ├── node_modules/
 │   ├── db.js
 │   ├── package-lock.json
 │   ├── package.json
 │   ├── server.js
 │   └── taskModel.js
 └── frontend
+    ├── node_modules/
     ├── README.md
     ├── index.html
     ├── package-lock.json
